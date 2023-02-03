@@ -41,7 +41,7 @@ module Devise
       end
 
       def inactive?
-        revoked? && expired?
+        revoked? || expired?
       end
 
       def expired?
